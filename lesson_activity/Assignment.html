@@ -28,9 +28,9 @@
                     const table = document.getElementById('ManagementTable');
                     for (let i = 0; i < TMFs.length; i++) {
                         const TMF = TMFs[i];
-                        const name = TMF.getElementsByTagName('name')[0].textContent; // Make sure tag names match XML
+                        const name = TMF.getElementsByTagName('name')[0].textContent; 
                         const ic = TMF.getElementsByTagName('ic')[0].textContent;
-                        const phone = TMF.getElementsByTagName('phone')[0].textContent; // Fix variable name
+                        const phone = TMF.getElementsByTagName('phone')[0].textContent; 
                         const addres = TMF.getElementsByTagName('addres')[0].textContent;
                         const total = TMF.getElementsByTagName('total')[0].textContent;
                         const row = table.insertRow(i);
@@ -41,7 +41,7 @@
                         const totalCell = row.insertCell(4);
                         nameCell.innerHTML = name;
                         icCell.innerHTML = ic;
-                        phoneCell.innerHTML = phone; // Use corrected variable name
+                        phoneCell.innerHTML = phone; 
                         addresCell.innerHTML = addres;
                         totalCell.innerHTML = total;
                     }
