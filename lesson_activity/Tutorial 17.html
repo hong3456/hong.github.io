@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Form - Text Input</title>
+<link rel=icon href=smile.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+
+<style> 
+body{
+  font-size :40px;
+  width: 100%;
+  height: 100%;
+  background: red;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0%   {background-color: lightyellow;}
+  25%  {background-color: purple;}
+  50%  {background-color: blue;}
+  100% {background-color: lightgreen;}
+}
+
+h1 {
+  background-color: lightblue;
+}
+
+td {
+  text-shadow: 2px 2px 5px yellow;
+}
+
+</style>
+
+</head>
+<body topmargin=50>
+
+<center>
+
+<form>
+
+<h1>Personal details</h1>
+
+
+<table align=center> 
+
+
+
+
+<tr>
+<td width=200>First Name:</td>
+<td><input type=text name=fname></td>
+<td></td>
+</tr>
+
+<tr>
+<td width=200>Last Name:</td>
+<td><input type=text name=Iname></td>
+</tr>
+
+<tr>
+<td width=200>Gender:</td>
+<td><input type = radio name = gender value =Male>Male
+<input type = radio name = gender value =Female>Female</td>
+</tr>
+
+<tr>
+<td>Choose your favorite subjects:</td>
+<td><input type=checkbox name=fav_sub value=DCS4103>DCS4103
+<input type=checkbox name=fav_sub value=DCS3003>DCS3003
+<input type=checkbox name=fav_sub value=MST1003>MST1003
+<input type=checkbox name=fav_sub value=MST2003>MST2003
+</td>
+</tr>
+
+<tr>
+<td>Address:</td>
+<td><textarea rows=4 cols=30 name=address></textarea></td>
+
+</tr>
+
+
+<tr>
+<td>Date of brith:</td>
+<td><input type=date name=dob></td>
+</tr>
+
+<tr>
+<td>Login password:</td>
+<td><input type=password name=loginpass></td>
+</tr>
+
+<tr>
+<td>Course:</td>
+<td><select>
+<<option value="0">- List of Courses -</option>
+
+<optgroup label="Diploma In Computer Science">
+<option value="DCS_S1">Semester 1</option>
+<option value="DCS_S2">Semester 2</option>
+<option value="DCS_S3">Semester 3</option>
+<option value="DCS_S4">Semester 4</option>
+<option value="DCS_S5">Semester 5</option>
+<option value="DCS_S6">Semester 6</option>
+</optgroup>
+
+<option value="DIB">Diploma In Bussiness</option>
+<option value="DAS">Diploma In Airline Service</option>
+</select>
+</td>
+</tr>
+
+<tr align=center>
+<td colspan=2><input type=submit value=Submit>
+<input type=reset value=Reset></td>
+</tr>
+
+
+
+</table>
+</form></center>
+</body></html>
