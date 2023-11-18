@@ -1,0 +1,548 @@
+<html>
+<head>
+<title>Welcome to LS Luxury </title>
+<link rel=icon href=ls.jpg type=image/jpg>
+<meta name=viewport.content=width=device-width,initial-scale=1.0>
+
+<style>
+body{
+margin-top: 20;
+background-color:#FD780F;
+}
+
+p {
+font-size :50px;
+}
+
+.p1 {
+font-size :15px;
+}
+
+table {
+background-color:transparent;
+color:balck;
+font-size:50px;
+}
+
+table th{ 
+text-align: left;
+font-size:80px;
+font-family: Lucida Handwriting,Cursive;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 20%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+dl {
+font-size:20px;
+}
+
+.button1 {
+  background-color: white;
+  border: black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.cart {
+border: 1px solid #333;
+padding: 10px;
+}
+
+
+.cart-item input {
+width: 50px;
+margin-right: 5px;
+}
+
+.cart-item button {
+margin-left: 20px;
+}
+
+.clear-button {
+margin-left: 10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<table>
+<tr>
+<th width=680><a name="top">Luxury Shop</a></th>
+<td><a href="ONG HONG JUN_DCS2309161_project.html"target="_self">Home</a></td>
+<td><a href="project(about).html"target="_self">About</a></td>
+<td><a href="project(limited).html"target="_self">Limited items</a></td>
+<td><a href="project(news).html"target="_self">News</a></td>
+<td><a href="project(contect).html"target="_self">Contact</a></td>
+</tr>
+</table>
+
+<img src="shop.jpg" alt=Luxury Shop width=100% height=500>
+
+<dl>
+<dt>Product(click here to your product) :</dt>
+<dd> <a href="#coin" class="button button1">Shopping Cart</a> <a href="#point_here" class="button button1">Cap</a> <a href="#point" class="button button1">Wallet</a> <a href="#here" class="button button1">Bag</a><dd>
+</dl>
+
+<hr color=black width=100%>
+<p><a name="point_here">Cap:</a>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="coach.jpg">
+<img src="coach.jpg" alt="Coach" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product1">
+<p class="p p1">Coach Cap,White</p>
+<p class="p p1">$500.00</p>
+<label for="quantity1">Quantity:</label>
+<input type="number" id="quantity1" value="1" min="1">
+<button onclick="addToCart('product1', 'Coach Cap,White', 500.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="lv.jpg">
+<img src="lv.jpg" alt="Lv" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product2">
+<p class="p p1">Louis Vuitton Cap,Black-Grey</p>
+<p class="p p1">$860.00</p>
+<label for="quantity2">Quantity:</label>
+<input type="number" id="quantity2" value="1" min="1">
+<button onclick="addToCart('product2', 'Louis Vuitton Cap,Black-Grey', 860.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="vimade.jpg">   
+<img src="vimade.jpg" alt="Vimade" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product3">
+<p class="p p1">V/MADE Cap,Black</p>
+<p class="p p1">$435.00</p>
+<label for="quantity3">Quantity:</label>
+<input type="number" id="quantity3" value="1" min="1">
+<button onclick="addToCart('product3', 'V/MADE Cap,Black', 435.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="fendi.jpg">
+<img src="fendi.jpg" alt="Fendi" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product4">
+<p class="p p1">Fendi Cap,Classic Brown</p>
+<p class="p p1">$999.00</p>
+<label for="quantity4">Quantity:</label>
+<input type="number" id="quantity4" value="1" min="1">
+<button onclick="addToCart('product4', 'Fendi Cap,Classic Brown', 999.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="cucci.jpg">
+<img src="cucci.jpg" alt="Gucci" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product5">
+<p class="p p1">Gucci Baseball Cap</p>
+<p class="p p1">$599.00</p>
+<label for="quantity5">Quantity:</label>
+<input type="number" id="quantity5" value="1" min="1">
+<button onclick="addToCart('product5', 'Gucci Baseball Cap', 599.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<br><br>
+<p><a name="point">Wallet:</a></p>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="coach wallet.jpg">  
+<img src="coach wallet.jpg" alt="Coach" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product6">
+<p class="p p1">Coach Long Wallet,Black</p>
+<p class="p p1">$1099.00</p>
+<label for="quantity6">Quantity:</label>
+<input type="number" id="quantity6" value="1" min="1">
+<button onclick="addToCart('product6', 'Coach Long Wallet,Black', 1099.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="lv wallet.jpg">
+<img src="lv wallet.jpg" alt="Lv" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product7">
+<p class="p p1">Louis Vuitton Short Wallet,Black</p>
+<p class="p p1">$899.00</p>
+<label for="quantity7">Quantity:</label>
+<input type="number" id="quantity7" value="1" min="1">
+<button onclick="addToCart('product7', 'Louis Vuitton Short Wallet,Black', 899.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="wallet.jpg">
+<img src="wallet.jpg" alt="Dynamic Area" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product8">
+<p class="p p1">Dynamic Area Long Wallet,White</p>
+<p class="p p1">$359.00</p>
+<label for="quantity8">Quantity:</label>
+<input type="number" id="quantity8" value="1" min="1">
+<button onclick="addToCart('product8', 'Dynamic Area Long Wallet,White', 359.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="fendi wallet.jpg">
+<img src="fendi wallet.jpg" alt="Fendi" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product9">
+<p class="p p1">Fendi Monster Short Wallet,Black</p>
+<p class="p p1">$899.00</p>
+<label for="quantity9">Quantity:</label>
+<input type="number" id="quantity9" value="1" min="1">
+<button onclick="addToCart('product9', 'Fendi Monster Short Wallet,Black', 899.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="cucci wallet.jpg">
+<img src="cucci wallet.jpg" alt="Gucci" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product10">
+<p class="p p1">Gucci Classic Short Wallet</p>
+<p class="p p1">$799.00</p>
+<label for="quantity10">Quantity:</label>
+<input type="number" id="quantity10" value="1" min="1">
+<button onclick="addToCart('product10', 'Gucci Classic Short Wallet', 799.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+<p><a name="here">Bag:</a></p>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="coach bag.jpg">  
+<img src="coach bag.jpg" alt="Coach" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product11">
+<p class="p p1">Coach Bag,Black</p>
+<p class="p p1">$1599.00</p>
+<label for="quantity11">Quantity:</label>
+<input type="number" id="quantity11" value="1" min="1">
+<button onclick="addToCart('product11', 'Coach Bag,Black', 1599.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="lv bag.jpg">   
+<img src="lv bag.jpg" alt="Lv" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product12">
+<p class="p p1">Louis Vuitton Bag,Blue</p>
+<p class="p p1">$2688.00</p>
+<label for="quantity12">Quantity:</label>
+<input type="number" id="quantity12" value="1" min="1">
+<button onclick="addToCart('product12', 'Louis Vuitton Bag,Blue', 2688.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="bag.jpg">
+<img src="dior bag.jpg" alt="Vimade" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product13">
+<p class="p p1">Christian Dior Sanddle Bag,Black</p>
+<p class="p p1">$3666.00</p>
+<label for="quantity13">Quantity:</label>
+<input type="number" id="quantity13" value="1" min="1">
+<button onclick="addToCart('product13', 'Christian Dior Sanddle Bag,Black', 3666.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="fendi bag.jpg">   
+<img src="fendi bag.jpg" alt="Fendi" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product14">
+<p class="p p1">Fendi Bag,Black-White</p>
+<p class="p p1">$3229.00</p>
+<label for="quantity14">Quantity:</label>
+<input type="number" id="quantity14" value="1" min="1">
+<button onclick="addToCart('product14', 'Fendi Bag,Black-White', 3229.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_self" href="cucci bag.jpg">
+<img src="cucci bag.jpg" alt="Gucci" width="600" height="400">
+</a>
+<div class="desc">
+<div class="product" id="product15">
+<p class="p p1">Gucci Classic Bag</p>
+<p class="p p1">$2980.00</p>
+<label for="quantity15">Quantity:</label>
+<input type="number" id="quantity15" value="1" min="1">
+<button onclick="addToCart('product15', 'Gucci Classic Bag', 2980.00)">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<hr color=black width=100%>
+
+<div class="cart" id="cart">
+<h1><a name="coin">Shopping Cart</a></h1>
+<ul id="cartItems"></ul>
+<p>Total: $<span id="total">0.00</span></p>
+<button onclick="clearCart()" class="clear-button">Clear Cart</button>
+</div>
+
+
+<script>
+const cartItemsElement = document.getElementById('cartItems');
+const totalElement = document.getElementById('total');
+let cart = [];
+
+function addToCart(productId, productName, productPrice) {
+const quantityInput = document.getElementById(`quantity${productId.substring(7)}`);
+const quantity = parseInt(quantityInput.value, 10);
+
+const existingItemIndex = cart.findIndex(item => item.id === productId);
+
+if (existingItemIndex !== -1) {
+cart[existingItemIndex].quantity += quantity;
+} else {
+cart.push({
+id: productId,
+name: productName,
+price: productPrice,
+quantity: quantity,
+});
+}
+
+displayCart();
+}
+
+function decreaseCartItemQuantity(itemId) {
+const cartItem = cart.find(item => item.id === itemId);
+if (cartItem && cartItem.quantity > 1) {
+cartItem.quantity -= 1;
+displayCart();
+}
+}
+
+function increaseCartItemQuantity(itemId) {
+const cartItem = cart.find(item => item.id === itemId);
+if (cartItem) {
+cartItem.quantity += 1;
+displayCart();
+}
+}
+
+function clearCartItem(itemId) {
+cart = cart.filter(item => item.id !== itemId);
+displayCart();
+}
+
+function clearCart() {
+cart = [];
+displayCart();
+}
+
+function displayCart() {
+cartItemsElement.innerHTML = '';
+let total = 0;
+
+cart.forEach(item => {
+const listItem = document.createElement('li');
+listItem.classList.add('cart-item');
+listItem.textContent = `${item.name}`;
+
+const quantityInput = document.createElement('input');
+quantityInput.type = 'number';
+quantityInput.value = item.quantity;
+quantityInput.min = '1';
+quantityInput.addEventListener('change', (event) => {
+item.quantity = parseInt(event.target.value, 10);
+displayCart();
+});
+
+const decreaseButton = document.createElement('button');
+decreaseButton.textContent = '-';
+decreaseButton.addEventListener('click', () => decreaseCartItemQuantity(item.id));
+
+const increaseButton = document.createElement('button');
+increaseButton.textContent = '+';
+increaseButton.addEventListener('click', () => increaseCartItemQuantity(item.id));
+
+const clearButton = document.createElement('button');
+clearButton.textContent = 'Clear';
+clearButton.addEventListener('click', () => clearCartItem(item.id));
+
+listItem.appendChild(quantityInput);
+listItem.appendChild(decreaseButton);
+listItem.appendChild(increaseButton);
+listItem.appendChild(clearButton);
+
+cartItemsElement.appendChild(listItem);
+
+total += item.price * item.quantity;
+});
+
+totalElement.textContent = total;
+}
+
+
+
+
+function bigmg(x){
+  x.style.height="600px";
+  x.style.width="50%px";
+}
+
+function normalImg(x){
+   x.style.height="400px";
+   x.style.width="50%";
+}
+
+//popup box
+window.alert("Welcome to Luxury Shop, enjoy your shopping day.");
+</script>
+
+
+
+<hr color=black width=100%>
+<br><br><br>
+
+<img onmouseover="bigmg(this)"
+onmouseout="normalImg(this)"
+<img src="shop2.jpg" alt=Cinque Terre width=50% height=400 align=left>
+
+<p align=justify><a href="project(about).html"target="_self"><b>Luxury Shop</b></a> is the official of all the luxury item and is <u>100% authentic</u>.Luxury Shop also  the largest luxury Shop in Malaysia.</p>
+
+<p align=center><a href="#top" class="button button1">Back to TOP</a></p>
+
+
+
+
+
+
+</body>
+</html>
