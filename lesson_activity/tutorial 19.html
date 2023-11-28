@@ -1,0 +1,25 @@
+<html><head><title>JavaScript</title>
+<link rel=icon href=sunflower.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+<script>
+  function checknumber(){
+    var getnumber = document.getElementById("insertnumber");
+  
+    if(getnumber.value<=0){  
+      alert("Number inserted (" + getnumber.value + ") is less or equal than 0.");  
+    }  
+    else if ((getnumber.value>0) && (getnumber.value<=50)){
+      alert("Number inserted (" + getnumber.value + ") is greater than 0 and less than 50.");  
+    }
+    else {
+      alert("Number inserted (" + getnumber.value + ") is greater than 50.");  
+    }
+}
+</script>
+</head>
+<body>
+<h1><u>Input a number</u></h1>
+Enter tour name:
+<input type=text id=insertnumber onchange=checknumber()>
+</body>
+</html>
