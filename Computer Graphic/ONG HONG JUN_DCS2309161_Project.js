@@ -17,19 +17,15 @@ let currInterval = 0;
 let lastTime = -2000;
 
 let cities = [
-    // { x: 50, y: cityY, alive: true },
-    // { x: 140, y: cityY, alive: true },
     { x: 300, y: cityY, alive: true },
     { x: 415, y: cityY, alive: true },
     { x: 530, y: cityY, alive: true },
     { x: 750, y: cityY, alive: true },
     { x: 870, y: cityY, alive: true },
     { x: 990, y: cityY, alive: true },
-    // { x: 1140, y: cityY, alive: true },
-    // { x: 1230, y: cityY, alive: true },
 ];
 
-// Adjust the x coordinates of the silos here
+
 const siloPos = [190, canvasWidth / 2, 1100]; // Example coordinates for the silos
 
 let silos = [
@@ -45,7 +41,7 @@ function setup() {
 function draw() {
   background(0);
 
-    // Check if there are any remaining targets
+    
   if (remainingTargets().length > 0) {
     // Spawn missiles every interval of 3 seconds if there are fewer than 2 missiles
     if (millis() - lastTime > 3000 && missiles.length < 2) {
@@ -77,7 +73,7 @@ function draw() {
   vertex(width, height);
   endShape(CLOSE);
 
-  // Draw the number of counter-missiles for each silo
+  
   fill(0);
   silos.forEach(silo => {
     let missilesPerRow = 1;
@@ -96,7 +92,7 @@ function draw() {
     }
   });
 
-  // Update and draw missiles
+ 
   stroke(255, 0, 0);
   strokeWeight(2);
   fill((Math.round(millis() / 2) % 2 === 0) ? 0 : 255);
@@ -105,7 +101,7 @@ function draw() {
     missile.pos.x += missile.dx;
     missile.pos.y += missile.dy;
 
-    // Check if the missile hit an explosion by doing a circle-circle collision check
+    
     explosions.forEach(explosion => {
       const dist = distance(explosion, missile.pos);
       if (dist < missileSize + explosion.size) {
@@ -113,7 +109,7 @@ function draw() {
       }
     });
 
-    // If missile is close to the target, blow it up
+   
     const dist = distance(missile.pos, missile.target);
     if (dist < missileSpeed) {
       missile.alive = false;
@@ -128,14 +124,13 @@ function draw() {
     }
   });
 
-  // Update and draw counter-missiles
+  
   stroke(0, 0, 255);
   fill(255);
   counterMissiles.forEach(missile => {
     missile.pos.x += missile.dx;
     missile.pos.y += missile.dy;
 
-    // If missile is close to the target, blow it up
     const dist = distance(missile.pos, missile.target);
     if (dist < counterMissileSpeed) {
       missile.alive = false;
@@ -146,7 +141,6 @@ function draw() {
     }
   });
 
-  // Update and draw explosions
   explosions.forEach(explosion => {
     explosion.size += 0.35 * explosion.dir;
     if (explosion.size > 30) {
@@ -160,7 +154,6 @@ function draw() {
     }
   });
 
-  // Remove dead missiles, explosions, cities, and silos
   missiles = missiles.filter(missile => missile.alive);
   counterMissiles = counterMissiles.filter(missile => missile.alive);
   explosions = explosions.filter(explosion => explosion.alive);
